@@ -1,0 +1,212 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #0073e6, #002f6c);
+    color: #fff;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+
+  #typewriter-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    display: inline-block;
+    animation: typing 5s steps(40, end), blink 0.7s step-end infinite alternate;
+    max-width: 100%;
+    margin: 20px auto;
+    line-height: 1.5;
+  }
+  
+  /* Typewriter Animations */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: #fff;
+    }
+  }
+  
+  /* Header Background */
+  #header {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #d6d6d6;
+  }
+  
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 5px; /* Adds space for the underline */
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3498db; /* Change the text color on hover */
+  }
+  
+  /* Underline line on hover */
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #3498db; /* Blue line color */
+    transition: width 0.3s ease;
+  }
+  
+  nav a:hover::after {
+    width: 100%; /* Full width of the text when hovered */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #0073e6;
+  }
+  
+  /* Main Content */
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  section ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  section ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  
+ /* Project Styling */
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+  }
+
+  /* Skills Section Styling */
+#skills {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4; /* Light background for contrast */
+  }
+  
+  #skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
